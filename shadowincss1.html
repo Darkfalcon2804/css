@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow in css</title>
+    <link rel="shortcut icon" href="/lecture7/download.jpg" type="image/x-icon">
+<style>
+    :root{
+        --custom-width:300px;
+    }
+    .container{
+        background-color: green;
+        height: 550px;
+        border: 5px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        --secondary-color:aqua;
+        background-color:var(--secondary-color);
+        height: 330px;
+        width: var(--custom-width);
+        border: 4px solid yellow;
+        margin: 53px;
+        padding: 25px;
+      /* box-shadow:20px 21px brown;  
+box-shadow:-20px 25px 50px rgb(73, 22, 193); */
+/* box-shadow: 20px 25px 6px 65px orange; */
+/* box-shadow: inset 15px 20px violet; */
+/* box-shadow: 10px 15px brown,20px 25px violet; */
+    }
+#text{
+    text-shadow:2px 5px 3px black,4px 2px 3px red,5px 6px 2px blue;
+}
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="/lecture7/download.jpg" alt="img">
+            <h2 id="text">Hi Good Morning</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, id.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>

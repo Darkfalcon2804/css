@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in css</title>
+    <style>
+    .box{
+        width:250px;
+        height:250px;
+        background-color: green;
+        margin:10px;
+       border: solid 5px blue;
+       padding:10px;   
+       /* transition-property: all;
+       transition-duration: 5s;
+       transition-delay: 1ms;
+       transition-timing-function: linear; 
+       
+       SHORT HAND (2)*/
+        transition: all 5s 1ms ease-out; /* yeh phela shorthand */
+        /* transition:width 2s,background-color 5s ;  yeh seconf shorthand of transition*/
+    
+    }
+   .box:hover{
+        width:1200px;
+        height:900px;
+        background-color: palegoldenrod;
+    }
+    </style> 
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

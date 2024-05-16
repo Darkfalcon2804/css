@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        font-size: 10px;
+    }
+    .class{
+     font-size: 10em;   /* Isi ka size inspect kar na pe 100px aayega kyuki em depends on parent and here parent is 10px fontsize if there was no parent then body became parent automatically so default  size is 16px and then 10em became 160px*/     
+      }
+      .firstpara{
+        border: 1px solid black;
+        font-size: 5rem;
+      }
+</style>
+<body>
+    <p class="firstpara"> Hello</p>
+    <div class="container">
+        <div class="class">
+            Welcome to website
+        </div>
+    </div>
+</body>
+</html>

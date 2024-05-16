@@ -12,26 +12,36 @@
         margin: 57px;
         padding:20px;
         display: flex;
+        height: 1200px;
         /* flex-direction: row-reverse;
         flex-wrap: nowrap; */
-        flex-flow: row;
-        justify-content: center;
+        /* flex-flow: row;*/
+        /* flex-wrap: wrap; */
+        justify-content: start; 
+        align-items: start;
+        align-content: start;
     }
     .box{
-        width: 205px;
-        height: 205px;
+        /* width: 205px;
+        height: 205px; */
         border: 3px solid brown; 
         margin: 4px;
         padding: 4px;
     }
     #box1{
       background-color: aqua;
+      order: 100;
+      /* flex-shrink: 5; */
+      /* flex-grow: 3; */
+      /* flex-basis: 500px; */
+      align-self: center;
     }
     #box2{
     background-color: brown;
     }
     #box3{
 background-color: cadetblue;
+order: 5;
     }
     #box4{
    background-color: coral;
@@ -39,10 +49,10 @@ background-color: cadetblue;
 </style>
 <body>
     <div class="container">
-    <div class="box" id="box1"></div>
-    <div class="box"id="box2"></div>
-    <div class="box"id="box3"></div>
-    <div class="box"id="box4"></div>
+    <div class="box" id="box1">box1</div>
+    <div class="box"id="box2">box2</div>
+    <div class="box"id="box3">box3</div>
+    <div class="box"id="box4">box4</div>
 </div>
     
 </body>
